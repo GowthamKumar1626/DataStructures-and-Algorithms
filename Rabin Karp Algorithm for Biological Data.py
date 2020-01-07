@@ -5,7 +5,7 @@ def rabinKarpAlgorithm(text,pat):
 	k = textLength - patLength + 1
 	patValue = weightOfString(pat,patLength,k)
 	print("Weight of Pattern:"+str(patValue))
-	index = computeT(text, k, patLength, patValue)
+	computeT(text, k, patLength, patValue)
 
 def weightOfString(pat,patLength,k):
 	i = 0
